@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sr-rs">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
+
+
+	<link rel='stylesheet' href='./css/osnovno.css' type='text/css' media='all' />
+	<link rel='stylesheet' href='./css/najava.css' type='text/css' media='all' />
+	<link rel='stylesheet' href='./css/fonts.css' type='text/css' media='all' />
+	<title> Teatar 011 </title>
+</head>
+
+<body>
+
+	<div class="najava">
+		<div class="slajd prikaz" style='background-image: url("./img/dragi-tata.jpg");' index="0">
+
+			<div class="opis">
+				<div class="naslovPredstave"> Dragi tata </div>
+				<div class="detalji">
+					Režija: Nataša Radonjić <br>
+					Scenario: Minja Bogavac <br><br>
+					<small>Akademija 28 u 20.00č <br>26. decembar 2022.</small>
+				</div>
+			</div>
+		</div>
+		<div class="slajd" style='background-image: url("./img/sekund.jpg");' index="1">
+			<div class="opis">
+				<div class="naslovPredstave">Sekund i 35 stotinki </div>
+				<div class="detalji">
+					Režija: Nataša Radonjić <br>
+					Scenario: Minja Bogavac <br><br>
+					<small>Akademija 28 u 20.00č <br>26. decembar 2022.</small>
+				</div>
+			</div>
+		</div>
+		<div class="slajd" style='background-image: url("./img/urnebesna.jpg");' index="2">
+			<div class="opis">
+				<div class="naslovPredstave"> Urnebesna tragedija </div>
+				<div class="detalji">
+					Režija: Nataša Radonjić <br>
+					Scenario: Minja Bogavac <br><br>
+					<small>Akademija 28 u 20.00č <br>26. decembar 2022.</small>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		setInterval(()=>{
+			let old = document.querySelector('.slajd.prikaz');
+			let currentIndex = Number(old.getAttribute("index"));
+			let nextIndex = (currentIndex === 2) ? 0 : currentIndex + 1;
+			old.className = 'slajd';
+			document.querySelector(`.slajd[index="${nextIndex}"]`).className = 'slajd prikaz';
+		}, 6000);
+		
+	</script>
+				
+</body>
+
+</html>

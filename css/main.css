@@ -1,0 +1,77 @@
+:root {
+    --var--font-size--normal: 16px;
+    --var--font-size--huge: 42px
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent
+}
+
+html {
+    font-size: 14px
+}
+
+@media(min-width:576px) {
+    html {
+        font-size: 16px
+    }
+}
+
+@media(min-width:1200px) {
+    html {
+        font-size: 17px
+    }
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit
+}
+
+body {
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 0.875rem
+}
+
+body {
+    background-color: rgba(24, 22, 22, 1);
+    color: rgba(255, 255, 255, 1)
+}
+
+body {
+    margin: 0
+}
+
+body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #292b2c;
+    background-color: #fff
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+    display: block
+}

@@ -1,0 +1,36 @@
+/*ALL ELEMENTS*/
+/*// ALL ELEMENTS*/
+
+
+/*HTML TAG*/
+html {
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: sans-serif;
+    line-height: 1.15;
+}
+
+@media(min-width:576px) {
+    html {
+        font-size: 16px
+    }
+}
+
+@media(min-width:1200px) {
+    html {
+        font-size: 17px
+    }
+}
+/*//HTML TAG*/
+
+/* BODY TAG*/
+
+body {
+    background-color: rgba(24, 22, 22, 1);
+    color: rgba(255, 255, 255, 1);
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/*//BODY TAG*/
