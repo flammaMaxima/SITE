@@ -5,14 +5,35 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
 
-
+	<link rel='stylesheet' href='./css/fonts.css' type='text/css' media='all' />
 	<link rel='stylesheet' href='./css/osnovno.css' type='text/css' media='all' />
 	<link rel='stylesheet' href='./css/najava.css' type='text/css' media='all' />
-	<link rel='stylesheet' href='./css/fonts.css' type='text/css' media='all' />
+	<link rel='stylesheet' href='./css/zaglavlje.css' type='text/css' media='all' />
+	
 	<title> Teatar 011 </title>
 </head>
 
 <body>
+
+	<header class="header">
+		<nav class="nav-menu">
+			<ul class="items">
+				<li class="item" style="flex-grow: 8; text-align: center;"><a href="">Teatar 011</a></li>
+				<li class="item" style="flex-grow: 1;"><a href="">Ove sezone</a></li>
+				<li class="item" style="flex-grow: 1;"><a href="">Umetnički odbor</a></li>
+				<li class="item" style="flex-grow: 1;">
+					<a href="">O nama</a>
+					<!---div>
+						<a>O Teatru 011</a>
+						<a>Rekli su o nama</a>
+						<a>Nagrade i priznanja</a>
+					</div---->
+				</li>
+				<li class="item" style="flex-grow: 1;"><a href="">Ulaznice</a></li>
+			</ul>
+		</nav>
+		
+	</header>
 
 	<div class="najava">
 		<div class="slajd prikaz" style='background-image: url("./img/dragi-tata.jpg");' index="0">
@@ -31,7 +52,7 @@
 				<div class="naslovPredstave">Sekund i 35 stotinki </div>
 				<div class="detalji">
 					Režija: Nataša Radonjić <br>
-					Scenario: Minja Bogavac <br><br>
+					Scenario: Nebojša Romčević <br><br>
 					<small>Akademija 28 u 20.00č <br>26. decembar 2022.</small>
 				</div>
 			</div>
@@ -41,7 +62,7 @@
 				<div class="naslovPredstave"> Urnebesna tragedija </div>
 				<div class="detalji">
 					Režija: Nataša Radonjić <br>
-					Scenario: Minja Bogavac <br><br>
+					Scenario: Dušan Kovančević <br><br>
 					<small>Akademija 28 u 20.00č <br>26. decembar 2022.</small>
 				</div>
 			</div>
@@ -55,7 +76,7 @@
 			let nextIndex = (currentIndex === 2) ? 0 : currentIndex + 1;
 			old.className = 'slajd';
 			document.querySelector(`.slajd[index="${nextIndex}"]`).className = 'slajd prikaz';
-		}, 6000);
+		}, 5000);
 		
 	</script>
 				
