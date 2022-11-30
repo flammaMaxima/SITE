@@ -5,6 +5,12 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
 
+	<script src="./javascript/Application.js" type="module"></script>
+	<script src="./javascript/Pages.js" type="module"></script>
+	<script src="./javascript/pocetna.js" type="module"></script>
+	<script src="./javascript/error404.js" type="module"></script>
+
+
 	<link rel='stylesheet' href='./css/fonts.css' type='text/css' media='all' />
 	<link rel='stylesheet' href='./css/osnovno.css' type='text/css' media='all' />
 	<link rel='stylesheet' href='./css/najava.css' type='text/css' media='all' />
@@ -18,58 +24,28 @@
 	<header class="header">
 		<nav class="nav-menu">
 			<ul class="items">
-				<li class="item" style="flex-grow: 8; text-align: center;"><a href="">Teatar 011</a></li>
-				<li class="item" style="flex-grow: 1;"><a href="">Ove sezone</a></li>
-				<li class="item" style="flex-grow: 1;"><a href="">Umetnički odbor</a></li>
+				<li class="item" style="flex-grow: 8; text-align: center;"><a href="index.html?page=pocetna">Teatar 011</a></li>
+				<li class="item" style="flex-grow: 1;"><a href="index.html?page=ove-sezone">Ove sezone</a></li>
+				<li class="item" style="flex-grow: 1;"><a href="index.html?page=umetnicki-odbor">Umetnički odbor</a></li>
 				<li class="item" style="flex-grow: 1;">
-					<a href="">O nama</a>
+					<a href="index.html?page=o-nama">O nama</a>
 					<!---div>
 						<a>O Teatru 011</a>
 						<a>Rekli su o nama</a>
 						<a>Nagrade i priznanja</a>
 					</div---->
 				</li>
-				<li class="item" style="flex-grow: 1;"><a href="">Ulaznice</a></li>
+				<li class="item" style="flex-grow: 1;"><a href="index.html?page=ulaznice">Ulaznice</a></li>
 			</ul>
 		</nav>
 		
 	</header>
 
-	<div class="najava">
-		<div class="slajd prikaz" style='background-image: url("./img/dragi-tata.jpg");' index="0">
+	<main></main>
 
-			<div class="opis">
-				<div class="naslovPredstave"> Dragi tata </div>
-				<div class="detalji">
-					Režija: Nataša Radonjić <br>
-					Scenario: Minja Bogavac <br><br>
-					<small>Akademija 28 u 20.00č <br>26. decembar 2022.</small>
-				</div>
-			</div>
-		</div>
-		<div class="slajd" style='background-image: url("./img/sekund.jpg");' index="1">
-			<div class="opis">
-				<div class="naslovPredstave">Sekund i 35 stotinki </div>
-				<div class="detalji">
-					Režija: Nataša Radonjić <br>
-					Scenario: Nebojša Romčević <br><br>
-					<small>Akademija 28 u 20.00č <br>26. decembar 2022.</small>
-				</div>
-			</div>
-		</div>
-		<div class="slajd" style='background-image: url("./img/urnebesna.jpg");' index="2">
-			<div class="opis">
-				<div class="naslovPredstave"> Urnebesna tragedija </div>
-				<div class="detalji">
-					Režija: Nataša Radonjić <br>
-					Scenario: Dušan Kovančević <br><br>
-					<small>Akademija 28 u 20.00č <br>26. decembar 2022.</small>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 
-	<script>
+	<!----script>
 		setInterval(()=>{
 			let old = document.querySelector('.slajd.prikaz');
 			let currentIndex = Number(old.getAttribute("index"));
@@ -78,7 +54,7 @@
 			document.querySelector(`.slajd[index="${nextIndex}"]`).className = 'slajd prikaz';
 		}, 5000);
 		
-	</script>
+	</script----->
 				
 </body>
 
