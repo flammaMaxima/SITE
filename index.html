@@ -23,36 +23,49 @@
 
 	<header class="header">
 		<nav class="nav-menu">
-			<ul class="items">
-				<li class="item" style="flex-grow: 8; text-align: center;"><a href="index.html?page=pocetna">Teatar 011</a></li>
-				<li class="item" style="flex-grow: 1;"><a href="index.html?page=ove-sezone">Ove sezone</a></li>
-				<li class="item" style="flex-grow: 1;"><a href="index.html?page=umetnicki-odbor">Umetnički odbor</a></li>
-				<li class="item" style="flex-grow: 1;">
-					<a href="index.html?page=o-nama">O nama</a>
-					<!---div>
-						<a>O Teatru 011</a>
-						<a>Rekli su o nama</a>
-						<a>Nagrade i priznanja</a>
-					</div---->
-				</li>
-				<li class="item" style="flex-grow: 1;"><a href="index.html?page=ulaznice">Ulaznice</a></li>
-			</ul>
+			<div class="nav-menu-wrapper">
+				<div class="logo"><a href="index.html?page=pocetna">Teatar 011</a></div>
+				<div class="menu-icon">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="open-menu" class="">
+						<path fill="rgb(255,255,255)" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" id="close-menu" class="d-none">
+						<path fill="rgb(255,255,255)" d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/>
+					</svg>
+				</div>
+				<div class="items">
+					<div class="item"><a href="index.html?page=ove-sezone">Ove sezone</a></div>
+					<div class="item"><a href="index.html?page=umetnicki-odbor">Umetnički odbor</a></div>
+					<div class="item"><a href="index.html?page=o-nama">O nama</a></div>
+					<div class="item"><a href="index.html?page=divaznice">Ulaznice</a></div>
+				</div>
+				
+			</div>
 		</nav>
 		
 	</header>
+
+	<script>
+		document.querySelector("#open-menu").addEventListener('click', function(e){
+			document.querySelector("#open-menu").classList.add('d-none');
+			document.querySelector("#close-menu").classList.remove('d-none');
+			document.querySelector(".nav-menu .items").classList.add('show');
+		});
+
+		document.querySelector("#close-menu").addEventListener('click', function(e){
+			document.querySelector("#open-menu").classList.remove('d-none');
+			document.querySelector("#close-menu").classList.add('d-none');
+			document.querySelector(".nav-menu .items").classList.remove('show');
+		});
+
+	</script>
 
 	<main></main>
 
 	
 
 	<!----script>
-		setInterval(()=>{
-			let old = document.querySelector('.slajd.prikaz');
-			let currentIndex = Number(old.getAttribute("index"));
-			let nextIndex = (currentIndex === 2) ? 0 : currentIndex + 1;
-			old.className = 'slajd';
-			document.querySelector(`.slajd[index="${nextIndex}"]`).className = 'slajd prikaz';
-		}, 5000);
+		
 		
 	</script----->
 				

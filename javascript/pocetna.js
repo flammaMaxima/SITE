@@ -8,6 +8,12 @@ if(Pages.activePage === "pocetna"){
         .then( onReady );
 
     function onReady(){
-        console.log("Events added")
+        setInterval(()=>{
+			let old = document.querySelector('.slajd.prikaz');
+			let currentIndex = Number(old.getAttribute("index"));
+			let nextIndex = (currentIndex === 2) ? 0 : currentIndex + 1;
+			old.className = 'slajd';
+			document.querySelector(`.slajd[index="${nextIndex}"]`).className = 'slajd prikaz';
+		}, 5000);
     }
 }
