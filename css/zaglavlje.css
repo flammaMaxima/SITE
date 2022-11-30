@@ -63,7 +63,7 @@
     }
 
     .items.show {
-        height: 5rem;
+        height: 8rem;
     }
 
     .nav-menu .menu-icon{
@@ -73,8 +73,9 @@
 
     .nav-menu .item {
         text-align: center;
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.4);
         width: 100%;
+
     }
 
     .nav-menu-wrapper .items{
